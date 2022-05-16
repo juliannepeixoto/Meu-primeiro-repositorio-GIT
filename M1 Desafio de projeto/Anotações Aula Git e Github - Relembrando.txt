@@ -1,0 +1,96 @@
+Git/Github: Relembrando algumas coisinhas
+
+1. Criar repositório no Github
+Ir até https://github.com/new
+
+2. README
+Possui extensão MD
+Exemplo:
+# Repositório do Desafio de Projeto sobre Git/Github da DIO
+Repositório criado para o Desafio de Projeto sobre Git/GitHub
+
+## Links Úteis
+[Sintaxe Básica Markdown)[https://www.markdownguide.org/basic-syntax/]
+
+Após edição > Clicar em Commit
+
+3. Clonar repositório
+Copiar link no Github: Code>“https://…”
+Colar no Terminal: git clone “link https copiado”
+
+4. Entrar no repositório na máquina
+Digitar no Terminal: cd “nome do repositório”
+
+5. Verificar status 
+Digitar no Terminal: git status
+
+6. Atualizar arquivos adicionados na máquina no controle de versão
+Digitar no Terminal: git add .
+
+7. Comitar
+Digitar no Terminal: git comitt -m “mensagem de explicação”
+
+8. Push para o GitHub
+Digitar no Terminal: git push origin main
+
+
+====
+10 Common Git Commands Everyone Should Know
+1. git clone
+This command is used for downloading the latest version of a remote project and copying it to the selected location on the local machine. It looks like this:
+git clone <repository url>
+
+To clone a specific branch, you can use
+
+git clone <repository url> -b <branch name>
+
+2. git fetch
+This Git command will get all the updates from the remote repository, including new branches
+
+3. git checkout
+You can use the checkout command to switch the branch that you are currently working on.
+
+git checkout <branch name>
+
+If you want to create a new branch and switch to it, you can do it by using this command:
+
+git checkout -b <branch name>
+
+4. git init
+This is the command you need to use if you want to start a new empty repository or to reinitialize an existing one in the project root. It will create a .git directory with its subdirectories. It should look like this:
+
+git init <repository name>
+
+5. git commit
+This one is probably the most used Git command. After changes are done locally, you can save them by “committing” them. A commit is like local a snapshot of the current state of the branch, to which you can always come back. To create a new commit, type this command in Git Bash:
+
+git commit -m "<commit message>"
+
+6. git push
+Git push will push the locally committed changes to the remote branch. If the branch is already remotely tracked, simply use it like this (with no parameters):
+
+git push
+If the branch is not yet tracked, and only resides on the local machine, you need to run the command like this:
+
+git push --set-upstream <remote branch> <branch name>
+
+
+7. git diff
+You can use this command to see the unstaged changes on the current branch. 
+
+8. git pull
+Using git pull will fetch all the changes from the remote repository and merge any remote changes in the current local branch.
+
+9. git add
+This is the command you need to use to stage changed files. You can stage individual files:
+
+git add <file path>
+Or all files:
+
+git add .
+
+10. git branch
+Using git branch will list all the branches of the repository.
+
+
+Source: https://blog.testproject.io/2021/03/22/git-commands-every-sdet-should-know/
